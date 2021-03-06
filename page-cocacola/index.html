@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA - Cocacola</title>
+
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- Javascript -->
+    <script src="js/main.js"></script>
+
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style/main.css">
+
+    <!-- Fuente -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+
+        <header>
+            <a href="#"><img src="img/logo.png" class="logo"></a>
+
+            <div class="toggle" onclick="toggleMenu()"></div>
+
+            <ul class="navbar">
+                <li>
+                    <a href="#">Inicio</a>
+                </li>
+                <li>
+                    <a href="#">Menú</a>
+                </li>
+                <li>
+                    <a href="#">Novedades</a>
+                </li>
+                <li>
+                    <a href="#">Contacto</a>
+                </li>
+            </ul>
+        </header>
+
+        <div class="contenedor">
+            <div class="textoBox">
+                <h2>Taste the Feeling</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolorum sint itaque est alias iusto officia vel magni mollitia! Quas placeat corrupti explicabo vero molestias consequuntur, rem quis ut porro? fficia vel magni mollitia!
+                    Quas placeat corrupti explicabo vero molestia</p>
+
+                <a href="#">Leer más</a>
+            </div>
+        </div>
+
+        <div class="slider">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/cocacola1.png"></div>
+
+                    <div class="swiper-slide"><img src="img/cocacola2.png"></div>
+
+                    <div class="swiper-slide"><img src="img/cocacola3.png"></div>
+
+                    <div class="swiper-slide"><img src="img/cocacola4.png"></div>
+
+                    <div class="swiper-slide"><img src="img/cocacola5.png"></div>
+
+                    <div class="swiper-slide"><img src="img/cocacola6.png"></div>
+                </div>
+            </div>
+        </div>
+
+        <ul class="redes">
+            <li>
+                <a href="#"><img src="img/facebook.png" alt="logo de facebook"></a>
+            </li>
+            <li>
+                <a href="#"><img src="img/twitter.png" alt="logo de twitter"></a>
+            </li>
+            <li>
+                <a href="#"><img src="img/instagram.png" alt="logo de instagram"></a>
+            </li>
+        </ul>
+    </section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 200,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            loop: true,
+        });
+
+        function toggleMenu() {
+            const menuToggle = document.querySelector('.toggle');
+            const navbar = document.querySelector('.navbar');
+
+            menuToggle.classList.toggle('active');
+            navbar.classList.toggle('active');
+        }
+    </script>
+
+</body>
+
+</html>
