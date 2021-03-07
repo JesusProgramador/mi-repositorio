@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Landing Page Starbucks</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style/main.css">
+
+
+</head>
+
+<body>
+
+    <section>
+
+        <div class="circle"></div>
+
+        <header>
+            <a href="#"><img src="img/logo.png" alt="Logo de Starbucks" class="logo"></a>
+
+            <div class="toggle" onclick="toggleMenu()"></div>
+
+            <ul class="navbar">
+                <li>
+                    <a href="#">Inicio</a>
+                </li>
+                <li>
+                    <a href="#">Menú</a>
+                </li>
+                <li>
+                    <a href="#">Noticias</a>
+                </li>
+                <li>
+                    <a href="#">Contacto</a>
+                </li>
+            </ul>
+
+        </header>
+
+        <div class="contenedor">
+            <div class="boxTexto">
+                <h2>It' not just Coffee <br>It's <span>Starbucks</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem architecto eaque, consectetur sunt enim autem corporis quam deserunt et fugiat dolorum amet neque consequatur natus perspiciatis quia assumenda, suscipit sequi.
+                </p>
+                <a href="#">Leer más</a>
+            </div>
+            <div class="boxImg">
+                <img src="img/img1.png" class="starbucks" alt="">
+            </div>
+
+        </div>
+
+        <ul class="thumb">
+            <li><img src="img/thumb1.png" onclick="imgSlider('img/img1.png');changeCircleColor('#017143')"></li>
+            <li><img src="img/thumb2.png" onclick="imgSlider('img/img2.png');changeCircleColor('#eb7495')"></li>
+            <li><img src="img/thumb3.png" onclick="imgSlider('img/img3.png');changeCircleColor('#d752b1')"></li>
+        </ul>
+
+        <ul class="redes">
+            <li>
+                <a href="#"><img src="img/facebook.png"></a>
+            </li>
+            <li>
+                <a href="#"><img src="img/instagram.png"></a>
+            </li>
+            <li>
+                <a href="#"><img src="img/twitter.png"></a>
+            </li>
+        </ul>
+
+    </section>
+
+    <script type="text/javascript" src="js/main.js"></script>
+
+
+</body>
+
+</html>
