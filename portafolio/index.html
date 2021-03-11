@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jesus Fuentes | Desarrollador Front-End</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Fuente -->
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+    </style>
+
+    <!-- javascript -->
+    <!-- <script type="text/javascript" src="js/main.js"></script> -->
+
+</head>
+
+<body>
+
+    <!-- Inicio de cabecera -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                <a href="#"><img src="img/logo_alterno.png" alt="logo"></a>
+            </div>
+
+            <div class="toggle" onclick="toggleMenu()"></div>
+
+            <ul class="menu">
+                <li><a href="#sobre-mi">Sobre mi</a></li>
+                <li><a href="#portafolio">Portafolio</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+
+            <a href="docs/CV Jesus Fuentes.pdf" class="btn-cv" download="CV Jesus Fuentes">DESCARGAR CURRÍCULUM</a>
+        </nav>
+
+        <div class="thumb">
+            <a href="https://www.linkedin.com/in/jesus-programador/" target="_blank"><img src="img/linkedin.png" alt=""></a>
+            <a href="https://github.com/JesusProgramador" target="_blank"><img src="img/github.png" alt=""></a>
+            <a href="https://wa.me/56958062430" target="_blank"> <img src="img/whatsapp.png" alt=""></a>
+        </div>
+
+    </header>
+
+
+    <main>
+
+
+
+
+        <!-- Inicio sobre mi -->
+        <section id="sobre-mi">
+
+            <div class="texto-info">
+                <h3 class="absolute-title">¡Hola, soy Jesús!</h3>
+
+                <p class="p-absolute">Front-End Developer JR, <br>actualmente vivo en Santiago, Chile.</p>
+
+                <p class="p-absolute cintillo">¡Trabajemos juntos!</p>
+
+                <a href="#contacto" class="btn-contacto "> Ponte en contacto</a>
+            </div>
+
+            <div class="bg-sobremi"></div>
+
+        </section>
+
+        <!-- Inicio Portafolio -->
+
+        <section id="portafolio">
+            <h3 class="texto-portafolio">Portafolio</h3>
+
+            <div class="grid-proyectos">
+
+                <div> <img src="img/laptop-starbucks.png" alt="proyecto personal sobre starbucks">
+
+                    <div class="botones">
+                        <a href="page-starbucks/index.html" target="_blank">Ver Proyecto</a>
+                        <a href="https://github.com/JesusProgramador/mi-repositorio/tree/main/page-starbucks" target="_blank">Ver Repositorio</a>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="img/laptop-cocacola.png" alt="proyecto personal sobre cocacola">
+
+                    <div class="botones">
+                        <a href="page-cocacola/index.html" target="_blank">Ver Proyecto</a>
+                        <a href="https://github.com/JesusProgramador/mi-repositorio/tree/main/page-cocacola" target="_blank">Ver Repositorio</a>
+                    </div>
+                </div>
+
+                <!-- <div>
+                    <img src="img/laptop2.png" alt="">
+
+                    <div class="botones">
+                        <a href="#">Ver Proyecto</a>
+                        <a href="#">Ver Repositorio</a>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="img/laptop2.png" alt="">
+
+                    <div class="botones">
+                        <a href="#">Ver Proyecto</a>
+                        <a href="#">Ver Repositorio</a>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="img/laptop2.png" alt="">
+
+                    <div class="botones">
+                        <a href="#">Ver Proyecto</a>
+                        <a href="#">Ver Repositorio</a>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="img/laptop2.png" alt="">
+
+                    <div class="botones">
+                        <a href="#">Ver Proyecto</a>
+                        <a href="#">Ver Repositorio</a>
+                    </div>
+                </div> -->
+
+
+            </div>
+
+        </section>
+
+        <!-- Inicio Habilidades -->
+
+        <section id="habilidades">
+            <h3 class="texto-habilidades">Habilidades</h3>
+
+            <div class="grid-box">
+
+                <div class="card"><img src="img/html.png" alt="html" class="logo-tarjeta" title="HTML 5"></div>
+
+                <div class="card"><img src="img/css.png" alt="css" class="logo-tarjeta" title="CSS"></div>
+
+                <div class="card"><img src="img/javascript.png" alt="javascript" class="logo-tarjeta" title="Javascript"></div>
+
+                <div class="card"><img src="img/sass.png" alt="sass" class="logo-tarjeta" title="SASS"></div>
+
+                <div class="card"><img src="img/bootstrap.png" alt="bootstrap" class="logo-tarjeta" title="Bootstrap"></div>
+
+                <div class="card"><img src="img/jquery.png" alt="jquery" class="logo-tarjeta" title="JQuery"></div>
+
+            </div>
+        </section>
+        <section id="contacto">
+
+            <div class="box-contacto ">
+                <h3 class="texto-contacto">Contacto</h3>
+
+                <form class="formulario" method="POST" action="enviar.php">
+                    <div>
+                        <span class="nombre-span">Nombre</span><br />
+                        <input type="text" class="box-form" name="nombre" id="nombre" placeholder="Nombre" required autocomplete="off"><br />
+                    </div>
+
+                    <div>
+                        <span class="email-span">Correo Electrónico</span>
+                        <input id="email" type="email" class="box-form" name="email" placeholder="Correo electrónico" required autocomplete="off"><br />
+                    </div>
+
+                    <div>
+                        <span class="mensaje-span">Mensaje</span>
+                        <input type="text" class="box-form" name="mensaje" id="mensaje" placeholder="Mensaje" required autocomplete="off"><br />
+                    </div>
+
+                    <div>
+                        <button id="btn" type="submit">Enviar mensaje</button>
+                    </div>
+                </form>
+
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Inicio footer -->
+    <footer>
+
+        <!--   <div class="redes">
+
+            <a href="https://www.linkedin.com/in/jesus-fuentes-72a187150/" target="_blank"><img src="img/linkedin.png" alt="linkedin"></a>
+
+            <a href="https://www.facebook.com/profile.php?id=100040811868551" target="_blank"><img src="img/facebook.png" alt="facebook"></a>
+
+            <a href="https://www.instagram.com/legalmentejesusf/" target="_blank"><img src="img/instagram.png" alt="instagram"></a>
+
+        </div> -->
+
+        <p class="copy">
+            Desarrollado y diseñado por <strong>Jesús Fuentes / JesusProgramador</strong> © 2021. Todos los derechos reservados.
+        </p>
+    </footer>
+
+    <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+
+</html>

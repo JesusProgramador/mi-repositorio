@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    position: relative;
+    max-width: 80px;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    display: inline-block;
+    color: #333;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+.contenedor {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedor .boxTexto {
+    position: relative;
+    max-width: 40%;
+}
+
+.contenedor .boxTexto h2 {
+    color: #333;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+
+.contenedor .boxTexto h2 span {
+    color: #017143;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+.contenedor .boxTexto p {
+    color: #333;
+    line-height: 1.6em;
+    letter-spacing: 1px;
+}
+
+.contenedor .boxTexto a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background: #017143;
+    color: #fff;
+    text-decoration: none;
+}
+
+.contenedor .boxImg {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding-right: 50px;
+}
+
+.contenedor .boxImg img {
+    max-width: 380px;
+}
+
+.thumb {
+    position: absolute;
+    left: 40%;
+    bottom: -10px;
+    transform: translateY(-50%);
+    display: flex;
+}
+
+.thumb li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.thumb li:hover {
+    transform: translateY(-15px);
+}
+
+.thumb li img {
+    max-width: 60px;
+}
+
+.redes {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes li {
+    list-style: none;
+}
+
+.redes li a {
+    display: inline-block;
+    margin: 5px 0;
+    transform: scale(0.6);
+    filter: invert(1);
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #017143;
+    clip-path: circle(600px at right 800px);
+}
+
+
+/******** Queries Responsive Design ***********/
+
+@media (max-width: 1504px) {
+    .contenedor .boxTexto h2 {
+        font-size: 3.8em;
+    }
+}
+
+@media (max-width: 1442px) {
+    .contenedor .boxTexto h2 {
+        font-size: 3.6em;
+    }
+}
+
+@media (max-width: 1374px) {
+    .contenedor .boxTexto h2 {
+        font-size: 3.4em;
+    }
+    .contenedor .boxImg img {
+        max-width: 300px;
+    }
+    .thumb li img {
+        max-width: 50px;
+    }
+}
+
+@media (max-width: 1303px) {
+    .contenedor .boxTexto h2 {
+        font-size: 3.3em;
+    }
+}
+
+@media (max-width: 1274px) {
+    .contenedor .boxTexto h2 {
+        font-size: 3.2em;
+    }
+    .contenedor .boxTexto p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 1239px) {
+    .contenedor .boxTexto h2 {
+        font-size: 3.1em;
+    }
+    .contenedor .boxImg img {
+        max-width: 290px;
+    }
+}
+
+@media (max-width: 1133px) {
+    .contenedor .boxTexto h2 {
+        font-size: 2.8em;
+    }
+}
+
+@media (max-width: 1024px) {
+    .contenedor .boxTexto h2 {
+        font-size: 2.5em;
+    }
+    .contenedor .boxTexto p {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 768px) {
+    header .navbar {
+        display: none;
+    }
+    header .navbar.active {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #017143;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+    }
+    header .navbar li a {
+        margin: 10px 0;
+        font-size: 1.5em;
+        font-weight: 300;
+        color: #fff;
+    }
+    .toggle {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background-image: url(/img/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        filter: invert(1);
+        z-index: 1000;
+    }
+    .toggle.active {
+        position: fixed;
+        right: 30px;
+        background-image: url(/img/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        filter: invert(1);
+        z-index: 1000;
+    }
+    .contenedor {
+        flex-direction: column;
+    }
+    .contenedor .boxTexto {
+        max-width: 100%;
+    }
+    .contenedor .boxImg {
+        width: 100%;
+        padding-right: 0;
+    }
+    .contenedor .boxImg img {
+        max-width: 250px;
+        position: relative;
+        top: 40px;
+    }
+    .thumb li img {
+        max-width: 40px;
+    }
+    .circle {
+        clip-path: circle(550px at right 1000px);
+    }
+    .redes {
+        top: 28%;
+        padding: 6px;
+        border-radius: 4px;
+        background: #017143;
+        transform: scale(0.8);
+    }
+    .thumb {
+        left: 36%;
+    }
+    @media (max-width: 465px) {
+        section {
+            padding: 40px;
+        }
+        header .logo {
+            left: -70%;
+        }
+        .toggle {
+            right: -30%;
+        }
+        .redes {
+            top: 45%;
+            transform: scale(0.7);
+        }
+        .contenedor .boxImg img {
+            max-width: 200px;
+            top: 50px;
+        }
+        .circle {
+            clip-path: circle(450px at right 1000px);
+        }
+        .thumb {
+            left: 25%;
+            top: 95%;
+        }
+    }
+    @media (max-width: 375px) {
+        .contenedor .boxTexto h2 {
+            font-size: 2.2em;
+        }
+        .contenedor .boxTexto a {
+            font-size: 0.8em;
+        }
+    }
+}
